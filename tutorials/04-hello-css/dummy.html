@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Dummy</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <!-- We could also link multiple external stylesheets added through links to selectively apply consisten styles to distinct categories of web pages.
+      order of these link elements matters - the ones that one later override the styles in earlier ones-->
+    <style>
+      body {
+        color: #0000FF;
+      }
+    </style> <!-- this adds page-specific CSS rules so that it doesn't change the other page's formatting
+          everything written here will override rules in our actual css file-->
+  </head>
+  <body>
+    <h1>Dummy</h1>
+      <p>This is a dummy page that helps us demonstrate reusable CSS stylesheets. <a href='hello-css.html'>Go back</a>.</p>
+      <p>Want to try crossing out an <a href='nowhere.html' style='color: #990000; text-decoration: line-through;'>obselete link<a>? This is your chance!</p>
+          <!-- inline style works in HTML as well for something specific like this link
+            this is the most specific way to define CSS, and they come before anything else
+            should be avoided at all cost because they make it impossibel to alter styles from an external stylesheet-->
+  </body>
+</html>

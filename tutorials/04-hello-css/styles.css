@@ -1,0 +1,46 @@
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+  font-size: 18px;
+    /* semicolons are required at the end of selections */
+}
+
+h1 {
+  font-size: 2em;
+  /* 2 em makes the font of h1 twice the size of the body text set at 18px */
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  /* accepts multiple values because not ever user has the same fonts installed
+    basically sets Arial as a backup if Helvetica isn't available */
+  font-weight: normal;
+  /*font weight deals with boldness
+    font-style can be normal or italic*/
+
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+  /* can also make the style type none to have the list items look more like buttons*/
+}
+
+a {
+  text-decoration: none;
+  /* means don't underline
+    line-through can also strike through "deleted text"
+    meaning should always be conveyed through HTML and not CSS*/
+}
+
+p {
+  text-align: left;
+  /* could also be right, center, or justify */
+}
