@@ -1,0 +1,78 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* this resets the default styles to have the information go to the edges of the webpage
+  found at the top of nearly every universal CSS stylesheet*/
+}
+
+h1, p {
+  background-color: #DDE0E3;
+}
+
+em, strong {
+  background-color: #B2D6FF;
+  display: inline; /*default for em and strong since they're inline elements*/
+}
+ h1 {
+   padding: 50px; /*adds 50 pixels to each side of the heading*/
+   /* makes the background color expand to fill this space since it's inside the border*/
+   /*paddng is the space between the box's content and border*/
+   border-bottom: 1px solid #5D6063;
+   /* borders go in order of size style color */
+   /* when you're not sure how a box is being rendered, ad a border: 1px solid red to see where it is*/
+ }
+
+/* p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  padding: 20px 10px; /* vertical horizontal */
+  /* same thing as above */
+  /* can also enter all four in one line in the order: top right bottom left */ /*
+} */
+
+p {
+  padding: 20px 0 20px 10px; /* top right bottom left*/
+  margin-top: 25px;
+  /*when you ahve two boxes with vertical margins sitting right next to each other, they will collapse. only the biggest one is displayed */
+  margin-bottom: 50px;
+  /* margins and paddings have similar functions, but padding has a background while margins are always transparent
+  padding is included in the click area of an element while margins aren't
+  margins ocllpase vertically while padding doesn't */
+}
+
+strong {
+  margin: 50px;
+  /* inline elements completely ignore the top and bottom margins of an element*/
+  /* padding: 50px; */
+  /*padding will create an entire colored box, but it won't affect the vertical layout of the surrounding boxes */
+}
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  /* using white-space and overflow properties can change the default behavior to have text automatically wrap to the next line*/
+  box-sizing: border-box;
+  /* forces the actual width of the box to be 200px including padding and borders*/
+  margin: 20px auto; /* vertical horizontal */
+  /* setting something to auto automatically centers the block in its parent element
+    only works on blocks with an explicit width defined */
+}
+
+body {
+  text-align: center;
+  /* aligns the content inside of our block boxes and not the blocks themselves - the div button is still going to be left-aligned*/
+}
