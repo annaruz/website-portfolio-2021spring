@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #FFF;
+  background-color: #5995DA;
+  padding: 20px 0;
+  display: flex; /*tells the browser that everything in the box should be rendered with flexbox instead of the default box model
+  enables flexbox layout mode -- added to flex container parent element */
+  justify-content: center;
+}
+
+.menu {
+  border: 1px solid #FFF;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* centers on vertical axis*/
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center; /*this is how you center items a column horizontally*/
+}
+
+.first-item {
+  order: 1;
+  /* order works beyond row/column boundaries*/
+}
+
+.last-item {
+  order: -1
+}
+
+.social, .subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.photo-grid-item {
+  border: 1px solid #FFF;
+  width: 300px;
+  height: 300px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #FFF;
+  background-color: #D9E9FE;
+  height: 200px;
+  flex: 1; /*tells teh items to stretch to match the width of the .footer so they stretch equally*/
+}
+
+.footer-three {
+  flex: 2;
+  /*gives this section twice the space*/
+}
+
+.footer-one, .footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+  /*fixed widths that don't change as the screen size changes while the middle box does*/
+}
+
+.signup {
+  margin-left: auto;
+  /*take up extra space in a flex container to move the other items to the right side of the container*/
+}
