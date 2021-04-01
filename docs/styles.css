@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Poppins', serif;
 }
 
 body {
@@ -15,17 +15,35 @@ body {
   background-repeat: no-repeat;
 }
 
-
 h1 {
   text-align: center;
   margin: .75em;
   font-size: 40px;
 }
 
-h1, h2, p {
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+}
+
+h2.about {
+  margin-top: 1.4em;
+}
+
+.none {
+  background-color: none;
+}
+
+h2, p, input.checkbox {
   padding-top: 1em;
   padding-left: 2em;
   padding: 10px;
+  margin: auto;
+  width: 50%;
+  background-color: #eae3bc;opacity:0.8;
+}
+
+h2 {
+  text-align: center;
 }
 
 
@@ -39,10 +57,11 @@ input.checkbox {
   margin-left: 1em;
   margin-top: .5em;
   margin-right: 1em;
-}
-
-.spotify-song {
-
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
 }
 
 .song {
@@ -79,6 +98,34 @@ li {
   float: center;
 }
 
+.translate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-color: #2754ce;
+  background-color: #dfdb7d;
+  color: #2754ce;
+  font-size: 16px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+  display: block;
+  padding: 15px 30px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: .8em;
+  box-shadow: 0;
+  margin-bottom: .8em;
+}
+
+.btn:hover {
+  border-color: #dfdb7d;
+  background-color: #2754ce;
+  color: #dfdb7d;
+}
+
 ul {
   background-color: #2754ce;
   color: white;
@@ -88,4 +135,11 @@ ul {
   left: 0;
   transform: none;
   padding: 1em;
+}
+
+/* grid */
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 150px;
+  grid-template-rows: repeat(3, minmax(100px, max-content));
 }
