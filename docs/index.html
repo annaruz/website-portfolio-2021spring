@@ -10,14 +10,26 @@
   </head>
   <body>
   <header>
-    <h1>An Honest Review of Every Class I've Taken at Pitt</h1>
-    <nav class='nav-container'>
-      <ul class='menu'>
+    <h1 id='top'><mark>An Honest Review of Every Class I've Taken at Pitt</mark></h1>
+    <nav class='navbar'>
+      <ul>
         <li><a href='index.html' class='nav-active'>HOME</a></li>
         <li><a href='communication.html'>COMMUNICATION</a></li>
         <li><a href='writing.html'>WRITING</a></li>
         <li><a href='spanish.html'>SPANISH</a></li>
-        <li><a href='gen-eds.html'>GEN EDS</a></li>
+        <div class='dropdown'>
+          <li><a href='gen-eds.html'>
+            <button class='dropbtn'>GEN EDS &or;</button></a></li>
+          <div class='dropdown-content'>
+            <a href='gen-eds.html#psych'>Psychology</a>
+            <a href="gen-eds.html#science">Science</a>
+            <a href="gen-eds.html#math">Math</a>
+            <a href="gen-eds.html#global">Global</a>
+            <a href="gen-eds.html#business">Business</a>
+            <a href="gen-eds.html#theater">Theater</a>
+            <a href="gen-eds.html#fitness">Fitness</a>
+          </div>
+        </div>
       </ul>
     </nav>
   </header>
@@ -42,8 +54,9 @@
   <input type='checkbox' class='checkbox' name='campus' checked>Beautiful campus <br/>
   <input type='checkbox' class='checkbox' name='encouraging' checked>Encouraging environment <br/>
 </div>
-<div class="empty">
-  <br/>
 </div>
+<form method="get" action="#top">
+    <button class='btn' onclick="topFunction">Back to Top</button>
+  </form>
 </body>
 </html>

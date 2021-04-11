@@ -6,13 +6,16 @@
 
 body {
   font-family: 'Poppins', serif;
-}
-
-body {
   background-image: url(img/cathy14.jpg);
   background-color: #a8bce1;
   background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 18px;
+}
+
+.highlight {
+  background-color:
 }
 
 h1 {
@@ -33,19 +36,44 @@ h2.about {
   background-color: none;
 }
 
-h2, p, .center-text, figcaption, .song {
-  padding-top: 1em;
-  padding-left: 2em;
-  padding: 10px;
-  margin: auto;
-  width: 50%;
-  background-color: #eae3bc;opacity:0.8;
+/* mobile */
+@media only screen and (max-width: 400px) {
+  h2, p, .center-text, figcaption, .song, iframe {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    background-color: #eae3bc;opacity:0.8;
+  }
+}
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  h2, p, .center-text, figcaption, .song {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding: 10px;
+    margin: auto;
+    width: 75%;
+    background-color: #eae3bc;opacity:0.8;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 961px) {
+  h2, p, .center-text, figcaption, .song {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    background-color: #eae3bc;opacity:0.8;
+  }
 }
 
 h2 {
   text-align: center;
 }
-
 
 h1 {
   text-align: center;
@@ -70,6 +98,15 @@ input.checkbox {
   background-color: #EAE3BC;
 }
 
+h1.big {
+  font-size: 36px;
+}
+
+mark {
+  background-color: #eae3bc;
+  padding: .2em;
+}
+
 nav {
   text-align: center;
 }
@@ -89,10 +126,6 @@ a {
   padding-left: 1.25em;
   font-weight: bold;
   color: #dfdb7d;
-}
-
-.normal a:visited {
-  color: black;
 }
 
 .heading {
@@ -127,7 +160,6 @@ li {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .center-text {
@@ -185,4 +217,51 @@ ul {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 150px;
   grid-template-rows: repeat(3, minmax(100px, max-content));
+}
+
+a.inline {
+  padding-left: 0;
+  color: #2754ce;
+}
+a:hover.inline, a:active.inline {
+  padding-left: 0;
+  color: #2754ce;
+  text-decoration: underline;
+}
+
+/* dropdown menu */
+.dropbtn {
+  background-color: #2754ce;
+  color: white;
+  font-size: 18px;
+  border: none;
+  font-family: 'Poppins', serif;
+  font-weight: bold;
+  color: #dfdb7d;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: #dfdb7d;
+  background-color: #2754ce;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #dfdb7d;
+  padding: 0px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

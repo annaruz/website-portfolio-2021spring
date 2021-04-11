@@ -10,17 +10,29 @@
   </head>
   <body>
     <header>
-      <h1>An Honest Review of Every Class I've Taken at Pitt</h1>
-      <nav>
+      <h1 id='top'><mark>An Honest Review of Every Class I've Taken at Pitt</mark></h1>
+      <nav class='navbar'>
         <ul>
           <li><a href='index.html'>HOME</a></li>
           <li><a href='communication.html'>COMMUNICATION</a></li>
           <li><a href='writing.html' class='nav-active'>WRITING</a></li>
           <li><a href='spanish.html'>SPANISH</a></li>
-          <li><a href='gen-eds.html'>GEN EDS</a></li>
+          <div class='dropdown'>
+            <li><a href='gen-eds.html'>
+              <button class='dropbtn'>GEN EDS &or;</button></a></li>
+            <div class='dropdown-content'>
+              <a href='gen-eds.html#psych'>Psychology</a>
+              <a href="gen-eds.html#science">Science</a>
+              <a href="gen-eds.html#math">Math</a>
+              <a href="gen-eds.html#global">Global</a>
+              <a href="gen-eds.html#business">Business</a>
+              <a href="gen-eds.html#theater">Theater</a>
+              <a href="gen-eds.html#fitness">Fitness</a>
+            </div>
+          </div>
         </ul>
       </nav>
-  </header>
+    </header>
 
     <h2 class='about'>ENGCMP 0208: Seminar in Service Learning</h2>
     <p>This class was to this day one of my favorite classes that I have taken at Pitt. If you have the chance to take this class, do it, especially if you are passionate about or interested in service work.
@@ -36,7 +48,7 @@
 
     <h2>ENGWRT 0610: Introduction to Journalistic and Non-Fiction Writing</h2>
     <p>Another one of my absolute favorite Pitt classes. I really grew as a writer during this class because my professor exposed me to new writing styles and challenged me to incorporate them into my own work.
-    The first official writing assignment that we completed was based on observation, and I chose to write mine about RedHawk Coffee, my favorite coffee shop in Oakland.</p>
+    The first official writing assignment that we completed was based on observation, and I chose to write mine about <a href="https://www.redhawkcoffee.com/" target="_blank" class='inline'>RedHawk Coffee</a>, my favorite coffee shop in Oakland.</p>
     <iframe src="writing2.pdf" width="50%" height='300px' class='center'></iframe>
     <div class='empty'>
       <br/>
@@ -45,8 +57,9 @@
     <h2>ENCMP 0610: Composing Digital Media</h2>
     <p>This class has been one of my favorite classes because it has challenged me creatively more than any other class that I have taken at Pitt. I have learned so many skills that I never thought I would be able to understand like sound editing and photo editing, and now here I am making a webpage!</p>
 
-    <div class='empty'>
-      <br/>
-    </div>
+    <form method="get" action="#top">
+        <button class='btn' onclick="topFunction">Back to Top</button>
+      </form>
+
   </body>
 </html>
